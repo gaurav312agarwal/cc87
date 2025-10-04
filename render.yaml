@@ -30,7 +30,7 @@ services:
         value: Agarwal
       - key: MONGO_URI
         value: mongodb+srv://gauravagarwal1694_db_user:JpoO0TmIn7XpdLNM@cluster0.szefjef.mongodb.net/gauravagarwal1694_db_user?retryWrites=true&w=majority&appName=Cluster0
-      - key: MONGO_DATABASE
+      - key: MONGO_DATABASE_NAME
         value: gauravagarwal1694_db_user
       - key: MAILER_ENABLED
         value: false
