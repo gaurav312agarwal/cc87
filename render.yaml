@@ -29,7 +29,7 @@ services:
       - key: ROOT_USER_LAST_NAME
         value: Agarwal
       - key: MONGO_URI
-        sync: false
+        value: mongodb+srv://gauravagarwal1694_db_user:JpoO0TmIn7XpdLNM@cluster0.szefjef.mongodb.net/gauravagarwal1694_db_user?retryWrites=true&w=majority&appName=Cluster0
       - key: MONGO_DATABASE
         value: gauravagarwal1694_db_user
       - key: MAILER_ENABLED
