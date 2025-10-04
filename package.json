@@ -1,0 +1,14 @@
+{
+  "name": "gaurav-agarwal",
+  "author": "Gaurav Agarwal",
+  "version": "2.9.1",
+  "private": true,
+  "engines": {
+    "node": "18.20.4"
+  },
+  "scripts": {
+    "install-all": "yarn install --cwd scripts && yarn install --cwd backend && yarn install --cwd frontend",
+    "build": "yarn build --cwd frontend",
+    "start": "cd backend && yarn start"
+  }
+}

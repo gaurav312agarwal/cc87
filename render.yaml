@@ -1,0 +1,38 @@
+services:
+  # Backend Web Service
+  - type: web
+    name: gaurav-agarwal-app
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: yarn install-all && yarn build
+    startCommand: yarn start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.20.4
+      - key: PORT
+        value: 10000
+      - key: PUBLIC_IP_ADDRESS
+        sync: false
+      - key: MAPPED_IP
+        value: true
+      - key: AUTH_SECRET
+        generateValue: true
+      - key: ROOT_USER_USERNAME
+        value: admin
+      - key: ROOT_USER_EMAIL
+        value: admin@gaurav-agarwal.com
+      - key: ROOT_USER_PASSWORD
+        value: Admin@123
+      - key: ROOT_USER_FIRST_NAME
+        value: Gaurav
+      - key: ROOT_USER_LAST_NAME
+        value: Agarwal
+      - key: MONGO_URI
+        sync: false
+      - key: MONGO_DATABASE
+        value: gaurav_agarwal
+      - key: MAILER_ENABLED
+        value: false
+      - key: SUPPORT_EMAIL_ADDRESS
+        value: support@gaurav-agarwal.com
