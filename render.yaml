@@ -6,7 +6,7 @@ services:
     region: oregon
     plan: free
     buildCommand: yarn install-all && yarn build
-    startCommand: yarn --cwd backend start
+    startCommand: yarn start
     envVars:
       - key: NODE_VERSION
         value: 18.20.4
