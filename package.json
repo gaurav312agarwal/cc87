@@ -8,7 +8,7 @@
   },
   "scripts": {
     "install-all": "yarn install --cwd scripts && yarn install --cwd backend && yarn install --cwd frontend",
-    "build": "yarn build --cwd frontend",
+    "build": "yarn --cwd frontend build",
     "start": "cd backend && yarn start"
   }
 }
