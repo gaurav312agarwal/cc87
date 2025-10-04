@@ -31,7 +31,7 @@ services:
       - key: MONGO_URI
         sync: false
       - key: MONGO_DATABASE
-        value: gaurav_agarwal
+        value: gauravagarwal1694_db_user
       - key: MAILER_ENABLED
         value: false
       - key: SUPPORT_EMAIL_ADDRESS
